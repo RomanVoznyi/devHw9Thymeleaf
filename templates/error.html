@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Time</title>
+    <style>
+			.wrapper {
+				width: 100vw;
+				height: 100vh;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			.container {
+				border: 2px solid red;
+				border-radius: 5px;
+				padding: 20px;
+				text-align: center;
+			}
+			.topic {
+				color: red;
+			}
+
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="container">
+        <h2 class="topic">Invalid timezone</h2>
+        <p th:text="${error}"></p>
+    </div>
+</div>
+</body>
+</html>
